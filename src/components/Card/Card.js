@@ -3,7 +3,7 @@ import './Card.css';
 import Button from '../Button/Button';
 import { connect } from 'react-redux'; 
 
-class Card extends Component {
+export class Card extends Component {
     
     state = {
         isDragging: false,
@@ -69,7 +69,7 @@ class Card extends Component {
                   </div>
                   </div>
                   <div className="buttons">
-                    <Button clicked={this.props.showNextCardandAccept}    BtnType="Success">Accept!</Button>
+                    <Button clicked={this.props.showNextCardandAccept} BtnType="Success">Accept!</Button>
                     <Button clicked={this.props.showNextCardandReject} BtnType="Danger">Reject!</Button>
                   </div>
               </div>
@@ -78,8 +78,8 @@ class Card extends Component {
 
 const mapStateToProps = state => {
     return  {
-        animationAccept: state.animationAccept,
-        animationReject: state.animationReject,
+        animationAccept: state.get('animationAccept'),
+        animationReject: state.get('animationReject')
     }
 }
 
