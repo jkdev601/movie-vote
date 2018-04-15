@@ -1,0 +1,76 @@
+.Button {
+    color: black;
+    outline: none;
+    cursor: pointer;
+    font: inherit;
+    font-weight: bold;
+    text-align: center;
+    border: 0;
+    width: 50%;
+}
+
+.Button:disabled {
+    color: #ccc;
+    cursor: not-allowed;
+}
+
+.Success {
+  background: #00934d;
+  background-image: -webkit-linear-gradient(top, #00934d, #3ae800);
+  background-image: -moz-linear-gradient(top, #00934d, #3ae800);
+  background-image: -ms-linear-gradient(top, #00934d, #3ae800);
+  background-image: -o-linear-gradient(top, #00934d, #3ae800);
+  background-image: linear-gradient(to bottom, #00934d, #3ae800);
+  font-family: Arial;
+  color: #ffffff;
+  font-size: 20px;
+  text-decoration: none;
+  margin-right: 1px;
+}
+
+.Success:hover {
+  background: #73ff98;
+  background-image: -webkit-linear-gradient(top, #73ff98, #60ff2b);
+  background-image: -moz-linear-gradient(top, #73ff98, #60ff2b);
+  background-image: -ms-linear-gradient(top, #73ff98, #60ff2b);
+  background-image: -o-linear-gradient(top, #73ff98, #60ff2b);
+  background-image: linear-gradient(to bottom, #73ff98, #60ff2b);
+  text-decoration: none;
+}
+
+.Danger {
+    background: #e63e3e;
+  background-image: -webkit-linear-gradient(top, #e63e3e, #ff2b2b);
+  background-image: -moz-linear-gradient(top, #e63e3e, #ff2b2b);
+  background-image: -ms-linear-gradient(top, #e63e3e, #ff2b2b);
+  background-image: -o-linear-gradient(top, #e63e3e, #ff2b2b);
+  background-image: linear-gradient(to bottom, #e63e3e, #ff2b2b);
+  font-family: Arial;
+  color: #ffffff;
+  font-size: 20px;
+  text-decoration: none;
+    margin-left: 1px;
+}
+
+.Danger:hover {
+  background: #ffb0b0;
+  background-image: -webkit-linear-gradient(top, #ffb0b0, #ff4a77);
+  background-image: -moz-linear-gradient(top, #ffb0b0, #ff4a77);
+  background-image: -ms-linear-gradient(top, #ffb0b0, #ff4a77);
+  background-image: -o-linear-gradient(top, #ffb0b0, #ff4a77);
+  background-image: linear-gradient(to bottom, #ffb0b0, #ff4a77);
+  text-decoration: none;
+}
+
+@media (min-width: 600px) {
+  .Button {
+    width: 25%;
+  }
+}
+
+@media (max-height: 400px) and (orientation:landscape) {
+  .Button {
+    width: 50%;
+    height: 50px;
+  }
+}
